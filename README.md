@@ -1,5 +1,5 @@
 # vue-icon
->Vue.js 组件脚手架 fecli 的模板
+>Vue.js 的 icon 组件
 
 ## 使用
 
