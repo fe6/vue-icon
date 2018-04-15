@@ -1,0 +1,20 @@
+sudo: false
+
+language: node_js
+node_js: stable
+
+install:
+  - yarn install
+
+script:
+  - yarn test
+  - yarn run codecov
+
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+    - master
