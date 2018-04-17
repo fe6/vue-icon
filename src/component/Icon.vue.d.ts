@@ -1,5 +1,5 @@
-import { Vue } from 'vue-property-decorator';
+import Vue from 'vue';
 export default class VIcon extends Vue {
-    type: string;
-    name: string;
+    type: string | undefined;
+    prefix: string | undefined;
 }
