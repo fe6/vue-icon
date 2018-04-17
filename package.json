@@ -1,5 +1,5 @@
 {
-  "name": "vue-icon",
+  "name": "@fe6/vue-icon",
   "version": "0.0.1",
   "description": "Vue.js 的 icon 组件",
   "scripts": {

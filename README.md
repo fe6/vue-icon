@@ -1,4 +1,4 @@
-# vue-icon
+# @fe6/vue-icon
 >Vue.js 的 icon 组件
 
 ## 使用
