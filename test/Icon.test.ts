@@ -6,6 +6,7 @@ describe('Icon.vue', () => {
   let wrapper: any;
   let wrapperNo: any;
   let wrapperPrefix: any;
+  let wrapperSpin: any;
 
   beforeEach(() => {
     wrapper = mount(Icon, {
@@ -18,6 +19,12 @@ describe('Icon.vue', () => {
       propsData: {
         type: 'loading1',
         prefix: 'test',
+      },
+    });
+    wrapperSpin = mount(Icon, {
+      propsData: {
+        type: 'loading1',
+        spin: true,
       },
     });
   });
@@ -61,6 +68,18 @@ describe('Icon.vue', () => {
       try {
         expect(wrapperPrefix.is('i')).toBe(true);
         expect(wrapperPrefix.classes().toString()).toBe('test-font,test-loading1');
+        done();
+      } catch (err) {
+        done.fail(err);
+      }
+    });
+  });
+
+  it("验证 spin 字段转动", done => {
+    wrapperSpin.vm.$nextTick(() => {
+      try {
+        expect(wrapperSpin.is('i')).toBe(true);
+        expect(wrapperSpin.classes().toString()).toBe('vi-font,vi-loading1,vi-spin');
         done();
       } catch (err) {
         done.fail(err);
