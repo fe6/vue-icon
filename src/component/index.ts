@@ -1,3 +1,3 @@
-import HelloComponent from './Hello.vue';
+import IconComponent from './Icon.vue';
 
-export default HelloComponent;
+export default IconComponent;
