@@ -1,5 +1,6 @@
 import Vue from 'vue';
+
 export default class VIcon extends Vue {
-    type: string | undefined;
-    prefix: string | undefined;
+  type: string | undefined;
+  prefix: string | undefined;
 }
