@@ -1,7 +1,7 @@
 <template>
   <div>
     自带
-    <Icon type="loading1" />
+    <Icon type="loading1" :spin="true" />
     <Icon type="loading2" />
     <Icon type="loading3" />
     <Icon type="loading4" />

@@ -28,9 +28,12 @@ $font-list: "\e66a" "\e668" "\e669" "\e667";
 @each $font-item in $font-list {
   .#{$font-prefix}loading#{index($font-list, $font-item)}::before {
     content: $font-item;
-    display: inline-block;
-    animation: loadingCircle 1s infinite linear;
   }
+}
+
+.#{$font-prefix}spin::before {
+  display: inline-block;
+  animation: loadingCircle 1s infinite linear;
 }
 
 @keyframes loadingCircle {
