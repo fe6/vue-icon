@@ -1,4 +1,6 @@
 # @fe6/vue-icon 图标
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/fe6/vue-icon.svg)](https://greenkeeper.io/)
 > Vue.js 的 语义化的矢量图形。
 
 ## 如何使用
